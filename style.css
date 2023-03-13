@@ -63,6 +63,14 @@ textarea{
   height: 1000px;
   border: 1px solid #CCC;
 }
+footer{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  color: #fff;
+  margin: 0;
+  height: 50px;
+  margin-left: -10px;
+}
 
 @media (max-width:799px){
   body{
