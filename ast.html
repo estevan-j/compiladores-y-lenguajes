@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AST</title>
+  <!-- Third Party Libraries -->
+  <script type="text/javascript" src="esprima.js"></script>
+  <script type="text/javascript" src="raphael-min.js"></script>
+  <script type="text/javascript" src="json2.js"></script>
+
+  <!-- Our code -->
+  <script type="text/javascript" src="ast.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Árbol de Sintaxis Abstracta (AST)</h2>
+  <form id="editor">
+    <div id="inputPane">
+      <h3>Código</h3>
+      <textarea name="code" id="codeInput" placeholder="Ingresa el código" onkeyup="treeDrawer.parseCode();"></textarea>
+    </div>
+    <div id="outputPane">
+      <h3>Arbol JSON</h3>
+      <pre id="json"></pre>
+    </div>
+  </form>
+  <div id="astPane">
+    <h3>Gráfico</h3>
+    <div id="ast"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador léxico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-        
+    rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1 class="display-1 title-h1">Analizador léxico (Scanner)</h1>
+
+    <br>
+
+    <div class="container">
+        <img src="/imag/fasesCompilador.png" alt="">
+    </div>
+
+    <br>
+
+    <div class="container">
+        <p id="paragraph">
+            Un analizador léxico es la primera fase de un compilador, consiste en un programa que recibe como entrada el código fuente de otro programa y produce una salida compuesta de tokens. Estos tokens sirven para una posterior etapa del proceso de taducción, siendo la entrada para el analizador sintáctico (parser).
+            <br>
+            <br>
+            Otra definición de análisis léxico consiste en romper un flujo de caracteres (fuente de texto) en un flujo de tokens.
+            Un token es una secuencia de caracteres tratados como una unidad. Cada token está asociado con un tipo de token:
+            <br>
+-	tokens identificadores: x, y, foo, etc. 
+<br>
+-	tokens enteros: 0, 1, -14, 512, etc. 
+<br>
+-	Si tokens: if
+        </p>
+        <p id="paragraph">
+            La especificación de un lenguaje de programación a menudo   
+            incluye un conjunto de reglas que definen el léxico. Estas  
+            reglas consisten comúnmente en expresiones regulares que    
+            indican el conjunto de posibles secuencias de caracteres que definen un token.
+        </p>
+
+        <h3 class="subtitle">Análisis</h3>
+
+        <p id="paragraph">
+            En esta etapa una máquina contiene la información de las posibles secuencias de caracteres que puede conformar cualquier token que sea parte del lenguaje. Por ejemplo, un token de naturaleza entero puede contener cualquier secuencia de caracteres numéricos.  
+        </p>
+
+        <h3 class="subtitle">Token</h3>
+
+        <p id="paragraph">
+            Es una cadena con un significado asignado y, por lo tanto, identificado. Está estructurado como un par que consta de un «nombre de token» y un «valor de    
+            token» opcional. El nombre del token es una categoría de unidad léxica. Los nombres de token comunes son: 
+
+            <br>
+            -   identificador: nombres que elige el programador
+            <br>
+            -   palabra clave: nombres que ya están en el lenguaje de programación
+            <br>
+            -   separador: caracteres de puntuación y delimitadores emparejados
+            <br>
+            -   operador: símbolos que operan sobre argumentos y producen resultados
+            <br>
+            -   literal: literales numéricos, lógicos, textuales, de referencia
+            <br>
+            -   comentario: depende del compilador si el compilador implementa comentarios como tokens o caso contrarios los elimina.
+            <br>
+            <br>
+            A continuación se puede observar un ejemplo del análisis léxico: 
+        </p>
+
+        <img src="/imag/exampleAnalizadorLexico.png" alt="Ejemplo de analizador léxico">
+    </div>
+
+    <br>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="#">Compiladores y Lenguajes EPN</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-   
+    kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+</html>

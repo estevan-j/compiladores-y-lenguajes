@@ -1,0 +1,81 @@
+BODY{
+  padding-left: 10px;
+  font-family: arial, sans-serif;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,126,98,1) 0%, rgba(9,121,88,0.19371498599439774) 12%, rgba(0,212,255,0.3757878151260504) 100%, rgba(6,142,128,1) 100%);
+}
+H1, H2, H3, H4, H5, H6 {
+  text-shadow: 6px 3px 5px #35374d;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+H3{
+  padding-top: 10px;
+}
+PRE {
+  margin: 0;
+}
+#codeInput {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+}
+::placeholder{
+  text-align: center;
+  color: #0e0c0c;
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+#inputPane {
+  float: left;
+  margin-right: 10px;
+  width: 600px;
+}
+textarea{
+  color: #0e0c0c;
+}
+#outputPane {
+  float: left;
+  width: 600px;
+}
+#json {
+  background-color: #fff;
+  border: 1px solid #0e0c0c;
+  box-shadow: #051937 3px;
+  overflow: scroll;
+  color: #051937;
+  height: 200px;
+  width: 550px;
+}
+#astPane {
+  clear: left;
+}
+#ast {
+ /* min-height: 90vh;*/
+  border: 1px solid #0e0c0c;
+  background-color: #fff;
+  margin-left: 40px;
+  width: 90vw;
+  padding: 0 auto;
+  height: 1000px;
+  border: 1px solid #CCC;
+}
+
+@media (max-width:799px){
+  body{
+    padding: 10px 20 px;
+  }
+  form{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #json {
+    width: 90vw;
+  }
+  #ast{
+    margin: 0 auto;
+  }
+}
