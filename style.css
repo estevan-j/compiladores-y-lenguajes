@@ -1,7 +1,7 @@
 BODY{
   padding-left: 10px;
   font-family: arial, sans-serif;
-  background: rgb(2,0,36);
+  padding: 0;
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,126,98,1) 0%, rgba(9,121,88,0.19371498599439774) 12%, rgba(0,212,255,0.3757878151260504) 100%, rgba(6,142,128,1) 100%);
   margin: 0;
 }
@@ -70,7 +70,6 @@ footer{
   color: #fff;
   margin: 0;
   height: 50px;
-  margin-left: -10px;
 }
 
 @media (max-width:799px){
