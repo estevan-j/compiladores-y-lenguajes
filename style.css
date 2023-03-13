@@ -3,6 +3,7 @@ BODY{
   font-family: arial, sans-serif;
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,126,98,1) 0%, rgba(9,121,88,0.19371498599439774) 12%, rgba(0,212,255,0.3757878151260504) 100%, rgba(6,142,128,1) 100%);
+  margin: 0;
 }
 H1, H2, H3, H4, H5, H6 {
   text-shadow: 6px 3px 5px #35374d;
